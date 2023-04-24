@@ -6,5 +6,5 @@ from cocotb.triggers import RisingEdge, FallingEdge, Timer, ClockCycles
 async def test_my_design(dut):
     dut._log.info("start")
 
-clock = Clock(dut.CLK, 1, units="ms")
-cocotb.start_soon(clock.start())
+#clock = Clock(dut.CLK, 1, units="ms")
+#cocotb.start_soon(clock.start())
