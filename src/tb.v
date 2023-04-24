@@ -2,8 +2,8 @@
 `timescale 1ns/1ps
 
 module tb (
-    input [7:0] io_in,
-    output [7:0] io_out
+    input clk,
+    output [6:0] dataout
     );
 
     initial begin
@@ -14,7 +14,7 @@ module tb (
 
     wire [7:0] inputs = {7'b0, clk};
     wire [7:0] outputs;
-    assign io_out = outputs[7:0];
+    assign dataout = outputs[6:0];
 
     wave wave (
         .io_in (inputs),
